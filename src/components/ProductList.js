@@ -1,23 +1,30 @@
 // src/components/ProductList.js
 import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import axios from "axios";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const category = `men's clothing`
+  const category = `phone`
 
+  // fetch advert data from dummyjson API
   useEffect(() => {
-    async function fetchProducts() {
-      try {
-        const response = await fetch(`https://fakestoreapi.com/products/category/${category}`);
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        console.error("Failed to fetch ads:", error);
-      }
-    }
-    fetchProducts();
+    axios.get(`https://dummyjson.com/products/search?q=${category}`)
+      .then(response => setProducts(response.data.products))
+      .catch(error => console.error("Error fetching data:", error));
   }, []);
+
+
+const handleConfirm = () => {
+    if (window.confirm("Accept cookies to personalize experience?")) {
+      console.log()
+    } else {
+      console.log("User cancelled");
+    }
+  };
+  useEffect(() =>{
+    handleConfirm();
+  },[])
 
   return (
     <div className="product-list">

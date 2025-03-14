@@ -32,7 +32,7 @@ FakeStore API is our data source for categorical advert details (although data h
 
 Navigating The Application
 
-In Google Colab, manipulate sample user input to your choice and run the code to see predicted product interest, example of user input:
+1. In Google Colab, manipulate sample user input to your choice and run the code to see predicted product interest, example of user input:
 sample_user = pd.DataFrame({
    'Age': [20],
    'Gender': ['Male'],
@@ -50,6 +50,10 @@ sample_user = pd.DataFrame({
    'Survey_Responses': ['Cosmetic'],
    'Device_Engagement_Level': [4]  # Make sure this column exists and has a value
 })
+2. The result is a prediction of likely products users are interested in
+3. This result is passed to dummyjson API to get relevant ads
+4. The relevant ads are displayed on the website
+
 
 <img width="1512" alt="Screenshot 2025-03-14 at 3 43 18 AM" src="https://github.com/user-attachments/assets/e8f6c77e-9eea-4bb1-9b6e-8d5560f16a22" />
 Dock File/Run.sh code

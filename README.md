@@ -1,4 +1,4 @@
-<img width="1512" alt="Screenshot 2025-03-14 at 3 43 18 AM" src="https://github.com/user-attachments/assets/e8f6c77e-9eea-4bb1-9b6e-8d5560f16a22" />AdBud: AI-Driven Dynamic User Profile Generator
+AdBud: AI-Driven Dynamic User Profile Generator
 
 What Does AdBud Do?
 AdBud is an AI model designed to generate dynamic user profiles based on a wide range of user metrics. By analyzing behavioral and demographic data, AdBud creates precise ad targeting recommendations that improve user engagement and increase marketing effectiveness.
@@ -51,6 +51,7 @@ sample_user = pd.DataFrame({
    'Device_Engagement_Level': [4]  # Make sure this column exists and has a value
 })
 
+<img width="1512" alt="Screenshot 2025-03-14 at 3 43 18 AM" src="https://github.com/user-attachments/assets/e8f6c77e-9eea-4bb1-9b6e-8d5560f16a22" />
 Dock File/Run.sh code
 
 Setting Up and Running the Project

@@ -53,7 +53,7 @@ sample_user = pd.DataFrame({
 2. The result is a prediction of likely products users are interested in
 3. This result is passed to dummyjson API to get relevant ads
 4. The relevant ads are displayed on the website
-
+Video walkthrough: https://www.loom.com/share/51f812a833f549e5b115dfdb802f619b?sid=d46cca77-9daa-4914-8b5c-3613a6f068ca
 
 <img width="1512" alt="Screenshot 2025-03-14 at 3 43 18 AM" src="https://github.com/user-attachments/assets/e8f6c77e-9eea-4bb1-9b6e-8d5560f16a22" />
 Dock File/Run.sh code

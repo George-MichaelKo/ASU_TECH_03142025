@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #000;
+  color: #f1c40f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Left 80% Section */
+.main-content {
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-content p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-style: italic;
+  color: #d4af37;
+}
+
+/* Right 20% Ad Section */
+.ad-section {
+  width: 20%;
+  background-color: #111;
+  padding: 20px;
+  overflow-y: auto;
+  border-left: 3px solid #f1c40f;
+}
+
+.ad-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f;
+}
+
+/* Product Cards */
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-card {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.4);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.product-card img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.product-card .rating {
+  font-size: 0.9rem;
+  color: #f1c40f;
+}
+
+.typewriter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d4af37;
+  overflow: hidden;
+  border-right: 2px solid #f1c40f; 
+  display: inline-block; 
+  max-width: 100%; 
+  white-space: normal; 
+  word-break: break-word; 
+  line-height: 1.5; 
 }
